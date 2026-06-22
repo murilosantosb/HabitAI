@@ -1,0 +1,21 @@
+<main>
+    <section class="auth">
+        <span>
+            <img src="./logo.png" alt="logo">
+            <h1>HabitAI</h1>
+        </span>
+        
+        @if(whichRoute() === "/login") {
+            <h2>Login into your account</h2>
+            <app-login />
+        } @else {
+            <h2>Sign in and start today!</h2>
+            <app-register />
+        }
+
+    </section>
+    <div class="delivery-auth">
+        <h2>You should. HabitAI!</h2>
+        <img src="./Delivery.png" alt="Delivery">
+    </div>
+</main>

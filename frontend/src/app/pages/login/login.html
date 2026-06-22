@@ -1,0 +1,27 @@
+<form action="" class="form-auth">
+    <input-component 
+        type="text"
+        label="Name"
+        placeholder="Murilo Santos"
+        icon="email"
+    />
+    <input-component 
+        type="password"
+        label="Password"
+        placeholder="Enter your password"
+        icon="password"
+    />
+
+    <p>Forgot Password?</p>
+
+    <section class="buttons-form">
+        <button-component variant="primary">Login Now</button-component>
+
+        <div class="divisor">
+            <span>OR</span>
+        </div>
+
+        <button-component variant="secondary" (click)="redirectToRegister()">Signup Now</button-component>
+    </section>
+</form>
+<router-outlet />

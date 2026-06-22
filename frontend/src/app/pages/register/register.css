@@ -1,0 +1,25 @@
+
+form.form-auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+section.buttons-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+form > p {
+    align-self: flex-end;
+    margin-top: -20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
