@@ -1,12 +1,20 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
+import { Sidebar } from "./components/sidebar/sidebar";
+import { Navbar } from "./components/navbar/navbar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Sidebar, Navbar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('HabitAI');
+
+  constructor(private router: Router) {}
+
+  currentRoute() {
+    return this.router.url;
+  }
 }

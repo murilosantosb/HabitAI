@@ -4,6 +4,7 @@ import { Register } from './pages/register/register';
 import { App } from './app';
 import { NotFound } from './pages/not-found/not-found';
 import { AuthPage } from './pages/auth-page/auth-page';
+import { Dashboard } from './pages/dashboard/dashboard';
 
 export const routes: Routes = [
     {
@@ -18,6 +19,10 @@ export const routes: Routes = [
     {
         path: "register",
         component: AuthPage
+    },
+    {
+        path: "dashboard",
+        component: Dashboard
     },
     {
         path: "**",

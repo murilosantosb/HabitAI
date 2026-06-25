@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+<main class="container">
+    @if(currentRoute() === "/register" || currentRoute() === "/login"){
+    <div class="none">
+        <sidebar></sidebar>
+        <navbar></navbar>
+    </div>
+    <div class="auth">
+        <router-outlet></router-outlet>
+    </div>
+} @else {
+        <sidebar class="sidebar"></sidebar>
+        <div class="right-side">
+            <div class="navbar">
+                <navbar></navbar>
+            </div>
+
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+}
+</main>

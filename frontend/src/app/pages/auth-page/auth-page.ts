@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth-page',
-  imports: [ButtonComponent, IconButtonComponent, InputComponent, Login, Register],
+  imports: [Login, Register],
   templateUrl: './auth-page.html',
   styleUrl: './auth-page.css',
 })
@@ -23,3 +23,5 @@ export class AuthPage {
     return this.router.url;
   }
 }
+
+// ButtonComponent, IconButtonComponent, InputComponent,

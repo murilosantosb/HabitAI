@@ -5,7 +5,7 @@ import { IconButtonComponent } from "../../components/icon-button-component/icon
 import { ButtonComponent } from "../../components/button-component/button-component";
 @Component({
   selector: 'app-login',
-  imports: [RouterOutlet, InputComponent, IconButtonComponent, ButtonComponent],
+  imports: [RouterOutlet, InputComponent, ButtonComponent],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })
@@ -19,3 +19,5 @@ export class Login {
     this.router.navigate(["/register"])
   }
 }
+
+// IconButtonComponent
