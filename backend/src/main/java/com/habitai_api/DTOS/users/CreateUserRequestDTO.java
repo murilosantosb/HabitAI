@@ -1,4 +1,4 @@
-package com.habitai_api.DTOS;
+package com.habitai_api.DTOS.users;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
